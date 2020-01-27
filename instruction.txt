@@ -1,0 +1,4 @@
+1.npm install animate.css --save
+2. Open angular.json file
+        -->  "input": "node_modules/animate.css/animate.css"  --> add this code in styles
+https://mdbootstrap.com/docs/angular/css/animations/
