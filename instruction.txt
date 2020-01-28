@@ -6,3 +6,5 @@ https://mdbootstrap.com/docs/angular/css/animations/
 ---------------------------------------
 npm install @angular/animations@latest --save
 app.module.ts  --> import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  & imports -->BrowserAnimationsModule
+---------------------------------------
+To Create Custom SVG --> https://loading.io/spinner/reload/-reload-sync-ajax-get-fetch
