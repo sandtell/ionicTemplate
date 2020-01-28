@@ -63,20 +63,26 @@
     <img class="animated bounce infinite " src="https://mdbootstrap.com/img/logo/mdb-transparent.png">
   </div> -->
 
-  <ion-card class="welcome-card animated flipInX">
-    <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" alt=""/>
+  <ion-card class="welcome-card animated flipInX" *ngFor="let n of newsJSON" >
+    <img [src]="n.newsImage" alt=""/>
     <ion-card-header>
-      <ion-card-subtitle>Get Started</ion-card-subtitle>
-      <ion-card-title>Welcome to Ionic</ion-card-title>
+      <!-- <ion-card-subtitle>Get Started</ion-card-subtitle> -->
+    <ion-card-title>{{n.newsTitle}}</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
+    <!-- <ion-card-content>
       <p class="red-text">
         Now that your app has been created, you'll want to start building out features
         and components. Check out some of the resources below for next steps.
       </p>
-    </ion-card-content>
+    </ion-card-content> -->
   </ion-card>
 
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
   
 
   <!-- <ion-card class="welcome-card">
