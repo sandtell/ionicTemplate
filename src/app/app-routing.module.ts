@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+  },
+  {
+    path: 'accordion',
+    loadChildren: () => import('./accordion/accordion.module').then( m => m.AccordionPageModule)
   }
 ];
 
