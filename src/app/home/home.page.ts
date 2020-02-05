@@ -18,11 +18,11 @@ export class HomePage implements OnInit  {
   ) {}
 
   ngOnInit() {
-    // this.getData();
+    this.getData();
   }
 
   getData(){
-    this.loadService.show('Please Wait ...', 'dots');
+    this.loadService.show('Please Wait ...', 'null');
     const url = this.config.configURL + 'mobileHandlers/newsList.ashx?newsMode=kar';
     this.config.getData(url).subscribe((data) => {
       console.log(data);

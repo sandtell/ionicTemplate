@@ -18,6 +18,14 @@ const routes: Routes = [
   {
     path: 'accordion',
     loadChildren: () => import('./accordion/accordion.module').then( m => m.AccordionPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'profilecard',
+    loadChildren: () => import('./profilecard/profilecard.module').then( m => m.ProfilecardPageModule)
   }
 ];
 

@@ -22,9 +22,19 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'accordion',
+      title: 'Accordion',
       url: '/accordion',
-      icon: 'list'
+      icon: 'contact'
+    },
+    {
+      title: 'Profile Card',
+      url: '/profilecard',
+      icon: 'contact'
+    },
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'log-in'
     }
   ];
 
