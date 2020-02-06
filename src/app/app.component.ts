@@ -32,6 +32,11 @@ export class AppComponent {
       icon: 'contact'
     },
     {
+      title: 'Timeline',
+      url: '/timeline',
+      icon: 'time'
+    },
+    {
       title: 'Login',
       url: '/login',
       icon: 'log-in'

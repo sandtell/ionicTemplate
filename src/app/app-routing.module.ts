@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'profilecard',
     loadChildren: () => import('./profilecard/profilecard.module').then( m => m.ProfilecardPageModule)
+  },
+  {
+    path: 'timeline',
+    loadChildren: () => import('./timeline/timeline.module').then( m => m.TimelinePageModule)
   }
 ];
 
