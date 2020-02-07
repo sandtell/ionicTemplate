@@ -10,53 +10,17 @@
 </ion-header>
 
 <ion-content>
-  <h1>Pure Css responsive <span>timeline</span></h1>
-
+  <h1><span>Timeline</span></h1>
   <div class="container">
-  
-     <div class="timeline-block timeline-block-right">
+      
+      <div *ngFor="let e of events let index=index;" [ngClass]="chkEvenOdd(index) ? 'timeline-block timeline-block-right' : 'timeline-block timeline-block-left' ">
         <div class="marker"></div>
         <div class="timeline-content">
-           <h3>$1000.00</h3>
-           <span>Invoice No.:4321</span>
-           <p>Date:12/12/19</p>
+          <h3>{{e.price}}</h3>
+          <span>Invoice No.: {{e.invoice}}</span>
+          <p>Date: {{e.date}}</p>
         </div>
-     </div>
-  
-     <div class="timeline-block timeline-block-left">
-        <div class="marker"></div>
-        <div class="timeline-content">
-          <h3>$800.00</h3>
-          <span>Invoice No.:4321</span>
-          <p>Date:12/12/19</p>
-        </div>
-     </div>
-  
-     <div class="timeline-block timeline-block-right">
-        <div class="marker"></div>
-        <div class="timeline-content">
-          <h3>$800.00</h3>
-          <span>Invoice No.:4321</span>
-          <p>Date:12/12/19</p>
-        </div>
-     </div>
-  
-     <div class="timeline-block timeline-block-left">
-        <div class="marker"></div>
-        <div class="timeline-content">
-          <h3>$800.00</h3>
-          <span>Invoice No.:4321</span>
-          <p>Date:12/12/19</p>
-        </div>
-     </div>
-  
-     <div class="timeline-block timeline-block-right">
-        <div class="marker"></div>
-        <div class="timeline-content">
-          <h3>$800.00</h3>
-          <span>Invoice No.:4321</span>
-          <p>Date:12/12/19</p>
-        </div>
-     </div>
+      </div>
   </div>
+ 
 </ion-content>

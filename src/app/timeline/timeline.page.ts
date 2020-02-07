@@ -13,26 +13,35 @@ export class TimelinePage implements OnInit {
     this.events = [
       {
         id: 0,
-        title: 'My last travel',
-        content: 'There are so much countries in the world...',
-        date: '2016 - 2019',
-        icon: 'https://image.flaticon.com/icons/svg/214/214335.svg'
+        price: '$1000.00',
+        invoice: '4321',
+        date: '12/12/19',
       },
       {
         id: 1,
-        title: 'My Job',
-        content: 'The best job I could possibly get!',
-        date: '2015 - 2016',
-        icon: 'https://image.flaticon.com/icons/svg/1006/1006517.svg'
+        price: '800.00',
+        invoice: '2341',
+        date: '01/12/19',
       },
       {
         id: 2,
-        title: 'My Education',
-        content: 'This is the university I went...',
-        date: '2011',
-        icon: 'https://image.flaticon.com/icons/svg/1141/1141771.svg'
+        price: '800.00',
+        invoice: '4032',
+        date: '01/11/19',
+      },
+      {
+        id: 3,
+        price: '600.00',
+        invoice: '2041',
+        date: '12/11/19',
       }
     ];
+  }
+
+  chkEvenOdd(index){
+    if(index % 2) {
+      return true;
+    }
   }
 
 }
